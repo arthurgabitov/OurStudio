@@ -22,9 +22,10 @@ const HEROES: Hero[] = [
     '<h2>Список</h2>' +
     '<ul class="heroes">' +
     '<li *ngFor="let hero of heroes">' +
-    '<span class="badge">{{hero.id}}</span> {{hero.name}}' +
+    '<div [draggable]><span class="badge">{{hero.id}}</span> {{hero.name}}</div>' +
     '</li>' +
-    '</ul>'
+    '</ul>',
+    directives: [Draggable],
     styles:[`
       .selected {
         background-color: #CFD8DC !important;
