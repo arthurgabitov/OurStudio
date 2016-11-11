@@ -22,7 +22,7 @@ const HEROES: Hero[] = [
     '<h2>Список</h2>' +
     '<ul class="heroes">' +
     '<li *ngFor="let hero of heroes">' +
-    '<div [draggable]><span class="badge">{{hero.id}}</span> {{hero.name}}</div>' +
+    '<div [draggable]><span>{{hero.id}}</span> {{hero.name}}</div>' +
     '</li>' +
     '</ul>',
     directives: [Draggable],
@@ -46,29 +46,6 @@ const HEROES: Hero[] = [
         padding: .3em 0;
         height: 1.6em;
         border-radius: 4px;
-      }
-      .heroes li.selected:hover {
-        background-color: #BBD8DC !important;
-        color: white;
-      }
-      
-      .heroes .text {
-        position: relative;
-        top: -3px;
-      }
-      .heroes .badge {
-        display: inline-block;
-        font-size: small;
-        color: white;
-        padding: 0.8em 0.7em 0 0.7em;
-        background-color: #607D8B;
-        line-height: 1em;
-        position: relative;
-        left: -1px;
-        top: -4px;
-        height: 1.8em;
-        margin-right: .8em;
-        border-radius: 4px 0 0 4px;
       }
     `]
 })
