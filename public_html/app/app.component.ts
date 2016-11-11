@@ -51,11 +51,7 @@ const HEROES: Hero[] = [
         background-color: #BBD8DC !important;
         color: white;
       }
-      .heroes li:hover {
-        color: #607D8B;
-        background-color: #DDD;
-        left: .1em;
-      }
+      
       .heroes .text {
         position: relative;
         top: -3px;
