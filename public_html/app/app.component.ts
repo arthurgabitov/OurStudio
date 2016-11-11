@@ -13,7 +13,7 @@ const HEROES: Hero[] = [
     { id: 7, name: 'Dynama' },
     { id: 8, name: 'Dr IQ' },
     { id: 9, name: 'Magma' },
-    { id: 10, name: 'Tornado' }
+    { id: 10, name: 'Tornado1' }
 ];
 
 @Component({

@@ -12,4 +12,5 @@ import {DraggableModule} from 'ng2-draggable';
     declarations: [ AppComponent ],
     bootstrap:    [ AppComponent ]
 })
+
 export class AppModule { }
