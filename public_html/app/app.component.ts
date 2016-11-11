@@ -12,6 +12,7 @@ const HEROES: Hero[] = [
     { id: 6, name: 'RubberMan' },
     { id: 7, name: 'Dynama' },
     { id: 8, name: 'Dr IQ' },
+    { id: 9, name: 'Magma' },
     { id: 10, name: 'Tornado' }
 ];
 
@@ -21,10 +22,9 @@ const HEROES: Hero[] = [
     '<h2>Список</h2>' +
     '<ul class="heroes">' +
     '<li *ngFor="let hero of heroes">' +
-    '<div [draggable]><span class="badge">{{hero.id}}</span> {{hero.name}}</div>' +
+    '<span class="badge">{{hero.id}}</span> {{hero.name}}' +
     '</li>' +
-    '</ul>',
-    directives: [Draggable],
+    '</ul>'
     styles:[`
       .selected {
         background-color: #CFD8DC !important;
